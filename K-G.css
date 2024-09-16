@@ -1,0 +1,157 @@
+/* Basic Styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    gap: 10px;
+}
+
+
+.left-box img {
+    max-width: 100px;
+    height: 100%; 
+    border-radius: 50%;
+   display: block;
+   
+}
+
+
+
+.right-box a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 2rem; 
+    font-size: 1.2rem; 
+    
+}
+
+.right-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .right-box {
+        margin-top: 10px; 
+
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; 
+    margin: 2rem;
+}
+
+/* Optional: Add a hover effect to intensify the shadow */
+.box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+img {
+    width: 100%; /* Ensure images take full width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    display: block;
+    margin: 10px 0;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.intro-section, .places-list, .place-to-visit {
+    margin-bottom: 20px;
+}
+
+.intro-section i {
+    font-style: italic;
+    color: #666;
+}
+
+.places-link a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.places-link a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Hover Effect for Images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .intro-section i {
+        font-size: 14px;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro-section, .places-list, .place-to-visit {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro-section, .places-list, .place-to-visit {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-container {
+        padding: 20px;
+    }
+}
